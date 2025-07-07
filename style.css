@@ -1,51 +1,63 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #f4f7fa;
+  color: #2c3e50;
 }
 
 header {
-  background: #2c3e50;
+  background: #1f2937;
   color: white;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 nav a {
   margin: 0 1rem;
-  color: #f1c40f;
+  color: #facc15;
   text-decoration: none;
+  font-weight: 600;
 }
 
 section {
   padding: 2rem 1rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
 h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #ddd;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
 }
 
-.project {
+.card {
   background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin: 1rem 0;
+  padding: 1.5rem;
 }
 
+.card h3 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card a,
 .project a {
-  color: #3498db;
+  color: #2563eb;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer {
-  background: #2c3e50;
+  background: #1f2937;
   color: white;
   text-align: center;
   padding: 1rem;

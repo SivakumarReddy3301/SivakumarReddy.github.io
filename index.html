@@ -5,63 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sivakumar Reddy | Data Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Sivakumar Reddy Kesavareddy</h1>
-    <p>Data Engineer | Azure · AWS · Databricks · Snowflake · PySpark</p>
+    <p>Data Engineer | Azure · AWS · Snowflake · Databricks</p>
     <nav>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a Data Engineer with 3+ years of experience building real-time and batch pipelines in healthcare and e-commerce domains using Azure, AWS, Databricks, and Snowflake.</p>
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+      <h3>Data Engineer, Accenture (May 2022 – Aug 2023)</h3>
+      <ul>
+        <li>Built 25+ ETL pipelines using ADF to ingest from SQL Server, SFTP, REST APIs into ADLS Gen2</li>
+        <li>Processed 50TB+/month of EHR, claims, and eligibility data via Databricks (PySpark)</li>
+        <li>Implemented CDC using Azure SQL + ADF for near real-time sync; reduced latency from 24h to <2h</li>
+        <li>Designed 40+ fact/dim tables in Synapse for Power BI dashboards (risk, churn, provider KPIs)</li>
+        <li>Set up RLS and column masking to enforce HIPAA and role-based data access across 5 departments</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Data Engineer, Cognizant (Aug 2020 – May 2022)</h3>
+      <ul>
+        <li>Built real-time ingestion from Kafka → Glue → S3 for clickstream, carts, and orders</li>
+        <li>Processed 35TB+ data/month using Glue + EMR with optimized PySpark</li>
+        <li>Built Snowflake models for sales, product, loyalty analytics, boosting dashboard speed by 40%</li>
+        <li>Used AWS Kinesis + Lambda + Step Functions for real-time event processing (99.9% delivery reliability)</li>
+        <li>Automated SQL/Python data validation scripts, reducing manual checks by 30%</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Healthcare Lakehouse Pipeline</h3>
-      <p>Ingested and transformed 50TB+ of claims and EHR data monthly using ADF, Databricks, and Delta Lake.</p>
-      <a href="https://github.com/yourusername/healthcare-etl-pipeline" target="_blank">View on GitHub</a>
+    <div class="card">
+      <h3>RAG-Based Chatbot for UT Dallas</h3>
+      <p>Built an LLM-powered chatbot using MongoDB, HuggingFace, and QDrant. Scraped content via Scrapy and implemented embedding-based RAG pipeline with React frontend.</p>
+      <a href="https://github.com/yourusername/rag-chatbot-utd" target="_blank">GitHub Repo</a>
     </div>
 
-    <div class="project">
-      <h3>Real-Time Clickstream Pipeline</h3>
-      <p>Built a streaming pipeline using Kafka + Spark + Delta for 1B+ click events/month with < 5 min latency.</p>
-      <a href="https://github.com/yourusername/clickstream-pipeline" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>RAG-Based Chatbot</h3>
-      <p>Built an AI chatbot for UT Dallas using LLMs, MongoDB, QDrant, and HuggingFace with website scraping and embedding search.</p>
-      <a href="https://github.com/yourusername/rag-chatbot-utd" target="_blank">View on GitHub</a>
+    <div class="card">
+      <h3>Dynamic Data Transformation Pipeline</h3>
+      <p>Created a medallion lakehouse pipeline using ADF, Databricks, Delta Live Tables for ingestion, cleansing, and transformation of structured/unstructured data.</p>
+      <a href="https://github.com/yourusername/azure-datalake-pipeline" target="_blank">GitHub Repo</a>
     </div>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, SQL, PySpark</li>
-      <li>Cloud: Azure (ADF, Synapse), AWS (Glue, EMR), GCP (BigQuery)</li>
-      <li>Tools: Databricks, Airflow, Kafka, Snowflake, dbt</li>
-    </ul>
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Languages:</strong> Python (Pandas, PySpark), SQL (T-SQL, Spark SQL), R, Java, Shell</li>
+        <li><strong>Cloud/DevOps:</strong> Azure (ADF, Synapse, Event Hub), AWS (S3, Glue, EMR, Kinesis), Jenkins, GitHub Actions</li>
+        <li><strong>Tools:</strong> Databricks, Airflow, Kafka, dbt, Power BI, Snowflake, Delta Lake, BigQuery</li>
+        <li><strong>Governance:</strong> HIPAA, RBAC, Lineage, Data Validation</li>
+        <li><strong>Certifications:</strong> AWS DEA, Azure DP-900, GCP ACE, Snowflake SnowPro</li>
+      </ul>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sivakumar-reddy-k/" target="_blank">linkedin.com/in/sivakumar-reddy-k</a></p>
-    <p>GitHub: <a href="https://github.com/SivakumarReddy3301" target="_blank">github.com/SivakumarReddy3301</a></p>
+    <div class="card">
+      <p>Email: <a href="mailto:sivakumarreddykr@gmail.com">sivakumarreddykr@gmail.com</a></p>
+      <p>Phone: (945) 527-5355</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sivakumar Reddy</p>
+    <p>&copy; 2025 Sivakumar Reddy Kesavareddy</p>
   </footer>
 </body>
 </html>
